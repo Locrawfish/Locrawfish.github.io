@@ -1,0 +1,24 @@
+# Site settings
+
+title: Finding my Glühbirnen
+email: 
+
+description: > # this means to ignore newlines until "baseurl:"
+  Hi y'all! My name is Loren, and I am a junior Rails developer. 
+  This space is for me to document my lessons learned, struggles, and wins as a junior dev. Happy Reading! :)
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: # the base hostname & protocol for your site
+
+# Social links.
+# Replace the word 'example' with your username if you want to include the icon in the left sidebar
+# Delete the word 'example' if you don't want to include the icon in the left sidebar
+
+twitter_username:     LCrawfish  # Replace this with your Twitter username
+github_username:      Locrawfish  # Replace this with your GitHub username
+linkedin_username:    lorenmcrawford  # Replace this with your LinkedIn username
+#google_plus_username: example  # Replace this with your Google+ username
+#facebook_username:    example  # Replace this with your Facebook username
+#dribbble_username:    example  # Replace this with your Dribbble username
+
+# Build settings
+markdown: kramdown

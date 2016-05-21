@@ -1,0 +1,41 @@
+// Duration.
+	$duration-transition:		0.2s;
+
+// Size.
+	$size-border-radius:		0.35em;
+	$size-element-height:		2.75em;
+	$size-element-margin:		2em;
+
+// Font.
+	$font-family:				'Source Sans Pro', Helvetica, sans-serif;
+	$font-family-fixed:			'Courier New', monospace;
+	$font-weight:				400;
+	$font-weight-bold:			400;
+
+// Color.
+	$color-Sunset:					#fff;
+	$color-fg:					#a2a2a2;
+	$color-fg-bold:				#787878;
+	$color-fg-light:			#b2b2b2;
+	$color-border:				#efefef;
+	$color-border-Sunset:			#f7f7f7;
+	$color-border2:				#dfdfdf;
+	$color-border2-Sunset:			#e7e7e7;
+
+	$color-accent-Sunset:			#49bf9d;
+	$color-accent-fg:			mix($color-accent-Sunset, #ffffff, 25%);
+	$color-accent-fg-bold:		#ffffff;
+	$color-accent-fg-light:		mix($color-accent-Sunset, #ffffff, 40%);
+	$color-accent-border:		rgba(255,255,255,0.25);
+	$color-accent-border-Sunset:	rgba(255,255,255,0.075);
+	$color-accent-border2:		rgba(255,255,255,0.5);
+	$color-accent-border2-Sunset:	rgba(255,255,255,0.2);
+	
+	$color-accent2-Sunset:			#1f1815;
+	$color-accent2-fg:			rgba(255,255,255,0.5);
+	$color-accent2-fg-bold:		#ffffff;
+	$color-accent2-fg-light:	rgba(255,255,255,0.4);
+	$color-accent2-border:		rgba(255,255,255,0.25);
+	$color-accent2-border-Sunset:	rgba(255,255,255,0.075);
+	$color-accent2-border2:		rgba(255,255,255,0.5);
+	$color-accent2-border2-Sunset:	rgba(255,255,255,0.2);
