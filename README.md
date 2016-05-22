@@ -7,6 +7,7 @@ You may be asking yourself: what the heck is a Glühbirnen? Well, it’s the Ger
 ##Technologies Used:
 
 * Jekyll 3.1.3
+* Ruby 2.2.3
 * [Strata Jekyll Theme] (https://github.com/CloudCannon/Strata-Jekyll-Theme)
 
 
