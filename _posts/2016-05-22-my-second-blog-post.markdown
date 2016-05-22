@@ -5,7 +5,7 @@ date:   2016-05-22 18:00:35 -0400
 categories: 
 ---
 
-Since starting my adventure into programming the term scope has collected more meaning for me, specifically how variables cannot be called outside of their scope. This blog post isn't about that type of scope, rather it's about the Rails Active Record scope. 
+Since starting my adventure into programming the term scope has collected more meaning for me, specifically how variables cannot be called outside of their scope. This blog post isn't about that type of scope though, rather it's about the Rails Active Record scope. 
 
 Honestly, I am rather surprised that it has taken me this long to come across scope enough times to actually ask what it is and how I should use it--perhaps this is one of the perks of working on a legacy codebase. Writing my own web apps never got me to push this far into ActiveRecord queries, so for all of you interested in learning about scopes, stay tuned! 
 
@@ -19,7 +19,7 @@ class Quote << ActiveRecord::Base
   end
 end
 ```
-Okay--that should work. To get Leslie Knope quotes you could then call:
+Okay--that would work. To get Leslie Knope quotes you could then call:
 
 ```ruby
 Quote.leslie => 'Why would anyone ever eat anything besides breakfast food?! ...'
@@ -44,7 +44,7 @@ class Quote << ActiveRecord::Base
   scope :jerry, -> { where(quote_topic: 'Jerry') }
 end
 
-Quote.april.jerry => 'Can you photoshop your life with better decisions, Jerry?!' 
+Quote.april.jerry => 'Can you photoshop your life with better decisions, Jerry?! ...' 
 ```
 
 Also, you can have default scopes that are called on the reg: 
@@ -55,7 +55,7 @@ class Quote << ActiveRecord::Base
 end
 ```
 
-**It's important to note that the default scope are put before any other scopes you call.
+**Default scope are put before any other scopes you call.**
 
 Another thing about scopes is that you can pass stuff into them! Like this:
 
@@ -65,7 +65,7 @@ class Quote << ActiveRecord::Base
 end
 ```
 
-So next time you want to run some simple WHERE or LIMIT queries, think about using scope. 
+Pretty cool, huh? So next time you want to run some simple WHERE or LIMIT queries, think about using scope. 
 
 That's all folks! :) 
 
