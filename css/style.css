@@ -550,6 +550,7 @@
 
 		.image.avatar {
 			border-radius: 100%;
+
 		}
 
 			.image.avatar:before {
@@ -557,8 +558,13 @@
 			}
 
 			.image.avatar img {
-				border-radius: 60%;
-				width: 120%;
+				border-radius: 90%;
+				width: 130%;
+				-webkit-filter: grayscale(60%); /* Chrome, Safari, Opera */
+    		filter: grayscale(60%);
+				-moz-box-shadow: 20px 10px 30px rgba(0,0,0,.75);
+				-webkit-box-shadow: 20px 10px 30px rgba(0,0,0,.75);
+				box-shadow: 20px 10px 30px rgba(0,0,0,.75);
 			}
 
 /* List */
@@ -937,8 +943,8 @@
 	#header {
 		background-color: #1f1815;
 		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../images/Sunset.jpg");
-		background-position: top left,							top left;
+		background-image: url("images/overlay.png"), url("../images/CafeSperl.jpg");
+		background-position: top-left,							top-left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
 		color: rgba(255, 255, 255, 0.5);
@@ -1027,8 +1033,8 @@
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -1263,7 +1269,7 @@
 		opacity: 1.0 !important;
 	}
 
-	h1.blog-title{
+	/*h1.blog-title{
 		padding:1em 0 0 10em;
 		margin: 0 3em;
 		color: #002266;
@@ -1273,4 +1279,4 @@
 		width:40em;
 		padding: 0.5em 0 0 10em;
 		margin: 0 0 0 25em;
-	}
+	}*/
