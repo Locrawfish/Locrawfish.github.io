@@ -36,7 +36,7 @@ end
 LOOK. AT. THAT. Three lines down to one (whaaat??). You don't have to write a class method. It looks pretty rad, which I believe Leslie would agree with too.  
 
 ## What else can Leslie Scope Do?
-Well, a lot. Scopes are chainable suckers, which makes them darn useful. For example if you wanted quotes from April about Jerry, you could do this:
+Well, a lot. Scopes are chainable suckers, which makes them darn useful. For example, if you wanted quotes from April about Jerry, you could do this:
 
 ```ruby
 class Quote << ActiveRecord::Base
@@ -46,6 +46,8 @@ end
 
 Quote.april.jerry => 'Can you photoshop your life with better decisions, Jerry?! ...' 
 ```
+
+![](http://lovelace-media.imgix.net/uploads/75/0985b010-75b0-0132-4378-0ebc4eccb42f.gif?)
 
 Also, you can have default scopes that are called on the reg: 
 
