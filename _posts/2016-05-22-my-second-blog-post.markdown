@@ -28,7 +28,7 @@ Quote.leslie => 'Why would anyone ever eat anything besides breakfast food?! ...
 Buuuuut it's rather long, isnt' it? Allow me to show you the Leslie Scope way (hehe):
 
 ```ruby
-class Quote < < ActiveRecord::Base
+class Quote <  ActiveRecord::Base
   scope :leslie, -> { where(character: 'Leslie Knope') }
 end
 ```
@@ -39,7 +39,7 @@ LOOK. AT. THAT. Three lines down to one (whaaat??). You don't have to write a cl
 Well, a lot. Scopes are chainable suckers, which makes them darn useful. For example, if you wanted quotes from April about Jerry, you could do this:
 
 ```ruby
-class Quote << ActiveRecord::Base
+class Quote < ActiveRecord::Base
   scope :april, -> { where(character: 'April Ludgate') }
   scope :jerry, -> { where(quote_topic: 'Jerry') }
 end
@@ -52,7 +52,7 @@ Quote.april.jerry => 'Can you photoshop your life with better decisions, Jerry?!
 Also, you can have default scopes that are called on the reg: 
 
 ```ruby
-class Quote << ActiveRecord::Base
+class Quote < ActiveRecord::Base
   default_scope { where show: 'Parks and Rec'}
 end
 ```
@@ -62,7 +62,7 @@ end
 Another thing about scopes is that you can pass stuff into them! Like this:
 
 ```ruby
-class Quote << ActiveRecord::Base
+class Quote < ActiveRecord::Base
    scope :season, -> (season) { where("season = ?", season) }
 end
 ```
