@@ -13,7 +13,7 @@ Honestly, I am rather surprised that it has taken me this long to come across sc
 Say you have a database filled with Parks and Rec quotes. Naturally, you frequently call upon this database to return to you Leslie Knope quotes. So what do you do? You could create a class method:
 
 ```ruby
-class Quote << ActiveRecord::Base
+class Quote < ActiveRecord::Base
   def self.leslie
     where(character: 'Leslie Knope')
   end
