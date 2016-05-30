@@ -8,7 +8,7 @@ This past Thursday I had the opportunity to learn about mob programming. Mob pro
 
 It looks a little like this:
 
-![](../images/Mob_Programming2.JPG)
+![](../images/Mob_Programming.JPG)
 
 ## How does it work?
 
