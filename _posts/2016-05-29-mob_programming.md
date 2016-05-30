@@ -46,7 +46,7 @@ I really like pair programming and see the immense value in consistently practic
 
 * When is it more productive to break off into pair programming?
 
-I have some toughts on some of these questions. I would hypothesize that the size of the group couldn’t get too big–perhaps between 4-6 people. Additionally (and this may be a no-brainer), the mob would need to have people who value the process, including the learning process for juniors as well as developers not familiar with a language. It also seems clear that the mob would, as a whole, need to be engaged. 
+I have some thoughts on some of these questions. I would hypothesize that the size of the group couldn’t get too big–perhaps between 4-6 people. Additionally (and this may be a no-brainer), the mob would need to have people who value the process, including the learning process for juniors as well as developers not familiar with a language. It also seems clear that the mob would, as a whole, need to be engaged. 
 
 I'm excited to share this with you all. I'm also excited to gain more experience with this practice--so expect another post in the future!
 
