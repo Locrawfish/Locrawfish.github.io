@@ -4,7 +4,7 @@ title:  "Mob Programming"
 date:   2016-05-29 21:00:35 -0400
 categories: 
 ---
-This past Thursday I had the opportunity to learn about mob programming. Mob programming is the concept of having an entire group (four or more) or team developers writing code together with only one computer, one keyboard, and one task to accomplish. The mob designates a ‘driver,’ who simply writes down the code the mob decides is appropriate. The group also moves at the speed of the mob, with the intention that no one is left behind.
+This past Thursday I had the opportunity to learn about mob programming. Mob programming is the concept of having an entire group or team (four or more) of developers writing code together with only one computer, one keyboard, and one task to accomplish. The mob designates a ‘driver,’ who simply writes down the code the mob decides is appropriate. The group also moves at the speed of the mob, with the intention that no one is left behind.
 
 It looks a little like this:
 
