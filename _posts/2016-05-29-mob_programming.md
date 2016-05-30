@@ -4,7 +4,7 @@ title:  "Mob Programming"
 date:   2016-05-29 21:00:35 -0400
 categories: 
 ---
-This past Thursday I had the opportunity to learn about Mob programming. Mob programming is the concept of having an entire group (four or more) or team developers writing code together with only one computer, one keyboard, and one task to accomplish. The mob designates a ‘driver,’ who simply writes down the code the mob decides is appropriate. The group also moves at the speed of the mob, with the intention that no one is left behind.
+This past Thursday I had the opportunity to learn about mob programming. Mob programming is the concept of having an entire group (four or more) or team developers writing code together with only one computer, one keyboard, and one task to accomplish. The mob designates a ‘driver,’ who simply writes down the code the mob decides is appropriate. The group also moves at the speed of the mob, with the intention that no one is left behind.
 
 It looks a little like this:
 
@@ -14,9 +14,9 @@ It looks a little like this:
 
 My colleague, Paul, put on an hour long mob programming session with the intent of creating a hexadecimal calculator, which would take in an integer and provide the hexadecimal value as output. If you want to check out our finished project, see it [here](https://ide.c9.io/philosodad/mob-project).
 
-We started by picking a driver, who would sit at the computer and listened to the group (we ended up switching out the driver every 10 minutes since we only had about 40 minutes to finish the task). The rest of us, picked a language to code in. We decided on Ruby on Rails, although we had some developers who mainly coded in Java or Javascript. Then, we started talking about what we needed to do.
+We started by picking a driver, who would sit at the computer and listen to the group (we ended up switching out the driver every 10 minutes since we only had about 40 minutes to finish the task). The rest of us, picked a language to code in. We decided on Ruby on Rails, although we had some developers who mainly coded in Java or Javascript. Then, we started talking about what we needed to do.
 
-First we started with the view by creating a form. Since some of the developers did not have experience with Rails, not everyone was sure how to proceed. This resulted in Rails developers talking mostly at first, but other developers from other languages also engaged. It was also surprisingly difficult to create a form as a group--especially when you so rarely have to do it by hand in Rails. What I found most interesting is how, although it took longer to complete the form, developers who had no experience with Ruby on Rails started to pick up on how to program using it.
+First we started with the view by creating a form. Since some of the developers did not have experience with Rails, not everyone was sure how to proceed. This resulted in Rails developers talking mostly at first, but other developers from other languages also engaged. It was surprisingly difficult to create a form as a group--especially when I so rarely it from scratch. What I found most interesting is how, although it took longer to complete the form, developers who had no experience with Ruby on Rails started to pick up on how to program using it.
 
 We then worked on creating the controller, using Ruby methods in our implementation of the calculator. We went through this relatively briefly, although we went through a view iterations of it, improving it within a short period of time.
 
