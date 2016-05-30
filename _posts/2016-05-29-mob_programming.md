@@ -12,7 +12,7 @@ It looks a little like this:
 
 ## How does it work?
 
-My colleague, Paul, put on an hour long mob programming session with the intent of creating a hexadecimal calculator, which would take in an integer and provide the hexadecimal value as output. If you want to check out our finished project, see it [here](https://ide.c9.io/philosodad/mob-project).
+My colleague, Paul, put on an hour long mob programming session with the intent of creating a hexadecimal calculator, which would take in an integer and provide the hexadecimal value as output. 
 
 We started by picking a driver, who would sit at the computer and listen to the group (we ended up switching out the driver every 10 minutes since we only had about 40 minutes to finish the task). The rest of us, picked a language to code in. We decided on Ruby on Rails, although we had some developers who mainly coded in Java or Javascript. Then, we started talking about what we needed to do.
 
