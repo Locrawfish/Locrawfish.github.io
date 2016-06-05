@@ -76,9 +76,9 @@ Cogsworth.advice 	# => "Well, there's the usual things: flowers..., chocolates..
 Cogsworth.pun		# => "If it's not Baroque, don't fix it!"
 
 ```
-As you can see instead of getting a ` NoMethodError`, I'm able to access the `pun` method when I call it on `Cogsworth`. If it were truly private, I would not have been able to get the result. The reason for this is because the `private` method can only be used for *instance methods*. 
+As you can see instead of getting a `NoMethodError` , I'm able to access the `pun` method when I call it on `Cogsworth`. If it were truly private, I would not have been able to get the result. The reason for this is because the `private` method can only be used for *instance methods*. 
 
-###This begs the question: how can you make a class method private? 
+### This begs the question: how can you make a class method private? 
 ![](http://i.giphy.com/xT9DPFPfULYJHHrqN2.gif)
 
 #### THE EIGENCLASS!
