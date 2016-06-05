@@ -4,8 +4,7 @@ title: Finding my Glühbirnen
 email: 
 
 description: > # this means to ignore newlines until "baseurl:"
-  Hi y'all! My name is Loren, and I am a junior Rails developer. 
-  This space is for me to document my lessons learned, struggles, and wins as a junior dev. Happy Reading! :)
+  Hi y'all! My name is Loren, and I am a junior Rails developer. This space is for me to document my lessons learned, struggles, and wins as a junior dev. Happy Reading! :)
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: # the base hostname & protocol for your site
 
