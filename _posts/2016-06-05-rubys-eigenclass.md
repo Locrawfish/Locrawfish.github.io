@@ -13,7 +13,7 @@ Ruby's use of the Eigenclass can look like this:
 class Cogsworth
   class << self # <- the Eigenclass 
     def pun
-    	puts "If it's not Baroque, don't fix it!"
+      puts "If it's not Baroque, don't fix it!"
     end
   end
 end
@@ -23,7 +23,7 @@ Or like this:
 ```ruby
 class Cogsworth
   def self.pun
-	puts "If it's not Baroque, don't fix it!"
+    puts "If it's not Baroque, don't fix it!"
   end
 end
 ```
@@ -35,7 +35,9 @@ Take this example:
 Cogsworth.pun # => If it's not Baroque, don't fix it!
 ```
 
-This is possible because `pun` is held onto by the Eigenclass, which acts like separate class that holds onto class methods as instance methods, but not interfering with any instance methods that may be created on the actual class (more on this in a minute.) Therefore, when you call `Cogsworth.pun` it's really something like this: `Cogsworth.CogsworthsEigenclass.pun`. 
+This is possible because `pun` is held onto by the Eigenclass, which acts like separate class that holds onto class methods as instance methods while not interfering with any instance methods that may be created on the actual class (more on this in a minute.) 
+
+Therefore, when you call `Cogsworth.pun` it's really something like this: `Cogsworth.CogsworthsEigenclass.pun`. 
 
 ![](http://25.media.tumblr.com/tumblr_ly19a98C3Q1qduy16o1_500.gif)
 
@@ -45,7 +47,7 @@ In the case where you only created an instance method (no Eigenclass), you could
 ```ruby
 class Lumiere
   def welcome
-	puts "Be our guest!"
+    puts "Be our guest!"
   end
 end
 
@@ -54,7 +56,7 @@ Lumiere.welcome # => NoMethodError: undefined method `welcome' for Lumiere:Class
 ```
 
 
-## Why is it important? 
+# Why is it important? 
 
 It’s important because using this allows you to make methods private that otherwise couldn't be made private.
 
@@ -63,12 +65,12 @@ Take this for example:
 ```ruby
 class Cogsworth
   def self.advice
-  	puts "Well, there's the usual things: flowers..., chocolates..., promises you don't intend to keep..."
+    puts "Well, there's the usual things: flowers..., chocolates..., promises you don't intend to keep..."
   end 
   
   private
   def self.pun
-	puts "If it's not Baroque, don't fix it!"
+    puts "If it's not Baroque, don't fix it!"
   end
 end
 
