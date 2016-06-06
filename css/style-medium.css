@@ -41,7 +41,7 @@
 /* Footer */
 
 	#footer {
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-color: #1f1815;
 		background-image: url("images/overlay.png"), url("../images/CafeSperl.jpg");
 		background-position: top-left,						bottom center;

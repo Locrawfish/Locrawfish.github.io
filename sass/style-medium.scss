@@ -54,7 +54,7 @@ $size-header-pad:		4em;
 /* Footer */
 
 	#footer {
-		background-attachment:	scroll;
+		background-attachment:	fixed;
 		background-color:		$color-accent2-Sunset;
 		background-image:		url('images/overlay.png'),		url('../images/Sunset.jpg');
 		background-position:	top left,						bottom center;
