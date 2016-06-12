@@ -99,7 +99,7 @@ def index
   @recipes = Recipe.order(created_at: :desc).includes(:baker)
 end
 ```
-Resulted in a `preload` being utilized, as you can see that 
+Resulted in a `preload` being utilized:
 
 ```
 Started GET "/recipes" for ::1 at 2016-06-12 13:56:02 -0400
@@ -110,6 +110,7 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 1.3ms)
 ```
 
+Thanks for reading!
 
 
 ### Happy Sunday, folks!
