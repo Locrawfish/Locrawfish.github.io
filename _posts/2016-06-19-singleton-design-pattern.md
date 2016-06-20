@@ -11,13 +11,12 @@ This design pattern is pretty straightforward, but if you don't know what it is 
 
 ### Get. Ready.
 
-
 ![](http://i.giphy.com/3oD3YFdLN5TK5mLVjW.gif)
 
 # What *is* a Singleton Class? 
 The purpose of the Singleton Class is (** **SPOILER ALERT** **) to create only one globally available instance of itself and ensure that no other instances are created.  
 
-#####Pro-tip: Ruby actually has a [Singleton Module](http://ruby-doc.org/stdlib-1.9.3/libdoc/singleton/rdoc/Singleton.html) you can use to implement this pattern. 
+##### Pro-tip: Ruby actually has a [Singleton Module](http://ruby-doc.org/stdlib-1.9.3/libdoc/singleton/rdoc/Singleton.html) you can use to implement this pattern. 
 <!--![](http://i.giphy.com/Q6gPyUYrCk76g.gif)-->
 
 # Why should you use this design pattern? 
