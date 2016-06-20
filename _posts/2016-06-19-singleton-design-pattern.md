@@ -7,7 +7,7 @@ categories:
 
 This week a colleague of mine shared his copy of the book [*Design Patterns: Elements of Reusable Object-Oriented Software*](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612) by the **The Gang Of Four**. The reason for this is that a design pattern came up at work this week, namely the Singleton Class Design Pattern.
 
-This design pattern is pretty straight forward, but if you don't know what it is or want a quick refresher: 
+This design pattern is pretty straightforward, but if you don't know what it is or want a quick refresher: 
 ###Get. Ready.
 
 ![](http://i.giphy.com/3oD3YFdLN5TK5mLVjW.gif)
