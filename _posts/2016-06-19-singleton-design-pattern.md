@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "One is the Loneliest Number: The Singleton Class Design Pattern"
+title:  "One is the Loneliest Number: The Singleton Design Pattern"
 date:   2016-06-19 21:00:35 -0400
 categories: 
 ---
