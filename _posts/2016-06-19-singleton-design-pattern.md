@@ -11,6 +11,7 @@ This design pattern is pretty straightforward, but if you don't know what it is 
 
 ### Get. Ready.
 
+
 ![](http://i.giphy.com/3oD3YFdLN5TK5mLVjW.gif)
 
 # What *is* a Singleton Class? 
