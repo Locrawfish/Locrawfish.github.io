@@ -24,6 +24,7 @@ Chanelle went on to talk about what defeats us and the fact that, generally, eve
 Experience. Everytime I sit down to pair, or create a PR, or ask a question, or when my mentor pushed me, or I have to admit that I simply did not know something--I have to be vulnerable. 
 
 I argue that vulnerability is important because:
+
 ### A space that allows vulnerability is also a space for sustained learning and growth.  
 
 
