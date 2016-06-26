@@ -33,7 +33,7 @@ I say all of this knowing that not everyone has the luxury of an apprenticeship.
 
 >"Real-world apprentices have to scratch and claw their way into the lives of master craftsmen and are grateful for whatever attention they can get, particularly face-to-face or, better yet, side-by-side."
 
-And this is certainly true. I understand whole heartedly that I was lucky to have a formal apprenticeship and have a mentor that I could be vulnerable with. Some of you reading may not be in a position where you feel safe to be vulnerable with your colleagues, which sucks, because it's such a missed opportunity for everyone.
+And this is certainly true. I understand wholeheartedly that I was lucky to have a formal apprenticeship and have a mentor that I could be vulnerable with. Some of you reading may not be in a position where you feel safe to be vulnerable with your colleagues, which sucks, because it's such a missed opportunity for everyone.
 
 ## Final Thoughts
 Vulnerability is not always comfortable, and by no means the only ingredient to being a "successful" apprentice or developer, but I think that it is a hugely undervalued aspect to being an apprentice, becoming a journeyman, and growing into a craftsman. 
