@@ -449,6 +449,9 @@
 		}
 
 /* Image */
+	img {
+		width:700px;
+	}
 
 	.image {
 		border-radius: 0.35em;
