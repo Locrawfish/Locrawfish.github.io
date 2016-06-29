@@ -1,18 +1,17 @@
 ---
 layout: post
 title:  "Mid-Week Blog Post: Partials, Cache keys, & MySQL Engines"
-date:   2016-06-29 8:00:35 -0400
+date:   2016-06-29 20:00:35 -0400
 categories: 
 ---
 
-## Hello there readers! Wonderful Wednesday!
+## Hello there readers! Fantastic Friday!
 
 ![](http://i.giphy.com/26tPd9QiB0qSPKSzK.gif=100x20)
 
-This blog post is a bit out of the norm from my #BlogBuddies series, but I really want to make sure that I'm documenting what I'm learning on this blog. I often document what I learn by obsessively carrying a notebook around work *all* the time and writing down things that I've learned or want to follow up on later (i.e. MySQL Engines). But this morning I was particularly inspired to get something on my blog (instead of hoarding it--and possibly forgetting about it--in my notebook), and this is the result.
+This blog post is a bit out of the norm from my #BlogBuddies series, but I really want to make sure that I'm documenting what I'm learning on this blog. I often document what I learn by obsessively carrying a notebook around work *all* the time and writing down things that I've learned or want to follow up on later (i.e. MySQL Engines). But this past Wednesday I was particularly inspired to get something on my blog (instead of hoarding it--and possibly forgetting about it--in my notebook), and this is the result.
 
 # So what have I learned this week?
-Well it's only Wednesday, so there is still more learning to yet to happen, but I learned a few things thus far that I wanted to share:
 
 ## Options for Rails Partials
 
@@ -30,23 +29,23 @@ In Rails you use can render partials using haml like this:
 Don't worry, you have options. :) 
 
 ### the `locals` option
-You may be familiar with the `locals` option. The `locals` option is a hash that allows you to pass in a variable the partial can use:
+You may be familiar with the `locals` option. The `locals` option is a hash that allows you to pass in a variable the partial can use. For example:
 
 ```ruby
 = render partial: "coffee_account", locals: { user: @coffee_aficionado }
 ```
-So the code above allows the partial to have access to the local variable `@coffee_aficionado` using the variable `user`.
+The code above allows the partial to have access to the local variable `@coffee_aficionado` under the new variable `user`.
 
 ### the `object` option
-The other option, `object`, wasn't something I had used before. But it's also very useful. It's similar to the `locals` option in that it allows you to pass in an object to the partial, but it does something a little different. 
+The other option, `object`, wasn't something I had used before. But it's also useful. It's similar to the `locals` option in that it allows you to pass in an object to the partial, but it does something a little different.
 
 ```ruby
 = render partial: "coffee_account", object: @coffee_aficionado } 
 ```
 
-This `object` option here gives you access to the local variable `@coffee_aficionado` under the name of the partial itself, `coffee_account`. 
+The `object` option above gives you access to the local variable `@coffee_aficionado` under the name of the partial itself, `coffee_account`. 
 
-So, this would be the equivalent to: 
+This would be the equivalent to: 
 
 
 ```ruby
@@ -64,7 +63,7 @@ This approach is equivalent to:
 ```ruby
 = render partial: "coffee_account", locals: { user: @coffee_aficionado } 
 ```
-Your partial gains access to the object `@coffee_aficionado` as the variable `user`. Thus, using the `as` and `object` options together is just like using the `locals` option, but less DRY.
+Your partial gains access to the object `@coffee_aficionado` as the variable `user`. Thus, using the `as` and `object` options together is just like using the `locals` option.
 
 ![](http://i.giphy.com/aMs2phB9gvHji.gif)
 
