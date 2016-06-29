@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mid-Week Blog Post: Partials, Cache keys, & MySQL Engines"
-date:   2016-06-29 8:00:35 -0400
+date:   2016-06-29 20:00:35 -0400
 categories: 
 ---
 
