@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "The Trials and Tribulations of Altering a Big Table in Your Database
-"
+title:  "Large Migrations: Rails, MySQL, and A Big Database"
 date:   2016-08-25 19:00:00 -0400
 categories: 
 ---
@@ -10,7 +9,7 @@ Before starting my first (and current) job as a web developer, I had no experien
 
 I have now gained some solid experience working with a **big** database, and I can say that they can be quite ornery and problematic.
 
-This blog post centers around a particular issue I was tasked with addressing, namely determining how to do a database migration with our biggest table. 
+This blog post centers around a particular issue I was tasked with addressing, namely determining how to do a Rails migration with our biggest table. 
 
 ## What's a Rails Migration?
 
@@ -31,7 +30,7 @@ rails db:migrate
 
 #### Allow me to explain (briefly).  
 
-`rails generate migration` creates an ActiveRecord::Migration that gives directions on how to change a schema in the database, and `db:migrate` actually carries out that change. 
+`rails generate migration` creates an `ActiveRecord::Migration` that gives directions on how to change a schema in the database, and `db:migrate` actually carries out that change. 
 
 For example, say I have a table full of 90's shows. This table has many columns, among them is a column for a TV channel. But, if I'm honest with myself, I don't even know what a TV channel is anymore, so I decide to remove it from the table. I could go about this by creating a simple migration like this:
 
@@ -55,9 +54,7 @@ Rails allows developers to write all this code in Ruby, but ultimately converts 
 
 ## Problem: Your table has a bagillion records and you need to change something
 
-Let's say that my parents let me watch A LOT of TV and my shows table takes up about 2GB of space, but the tmp directory MySQL is pointing to only has about 1GB of available space. I can't run the migration I set up in the previous sections, and I *really* need to remove this channel column.
-
-I could use a Rails migration, but I discovered that whilst running a migration, MySQL actually creates a temporary copy of the original table that can be read while the original table is altered. This temporary copy is stored in a temporary file directory, but this causes a problem when that temporary directory doesn't have enough space for the temporary copy. Simply put, if it doesn't have the space to fit the copy of the table you want to change, you can't run the migration. 
+Let's say that my parents let me watch A LOT of TV and my shows table takes is a really big table, but I still want to remove that channel column. I could use a standard Rails migration, but I discovered that whilst running a migration, MySQL under the hood actually creates a temporary copy of the original table that can be read while the original table is altered. This temporary copy is stored in a temporary file directory, but this causes a problem when that temporary directory doesn't have enough space for the temporary copy. Simply put, if it doesn't have the space to fit the copy of the table you want to change, you can't run the migration. 
 
 ![](http://i.giphy.com/3o6gbdvDgqBrsDX52o.gif)
 
@@ -71,6 +68,7 @@ What the documentation revealed is that MySQL 5.7.11 has the variable `innodb_tm
 ALTER TABLE shows SET SESSION innodb_tmpdir=/the/path/to/another/dir
 DROP COLUMN channel
 ```
+
 ## Why is this a good solution?
 
 This option is great because it's not a permanent change, like setting the `tmpdir` global variable, because let's face it, you may not have that option. It also allows your application to continue to read from the temporary table while the original table is altered, and ensures that your table won't lock.
@@ -78,9 +76,11 @@ This option is great because it's not a permanent change, like setting the `tmpd
 
 ### Thanks for reading, folks!
 
-![](http://i.giphy.com/10LNj580n9OmiI.gif)
 
 ## Want to know more? I got you covered:
 
 ### [Rails migrations](http://guides.rubyonrails.org/active_record_migrations.html) 
+
 ### [Session vs Global variables in MySQL](https://dev.mysql.com/doc/refman/5.7/en/using-system-variables.html)
+
+![](http://i.giphy.com/10LNj580n9OmiI.gif)
